@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well-Tech Solutions - IT Support as Deep as a Well</title>
+    <meta name="description" content="Professional IT support and solutions for home users and small businesses. Desktop, laptop, networking, CCTV, software troubleshooting, and remote support.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-water"></i>
+                <span>Well-Tech Solutions</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#booking" class="nav-link cta-button">Book Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="water-ripple"></div>
+            <div class="water-ripple"></div>
+            <div class="water-ripple"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Tech Solutions as <span class="highlight">Deep as a Well</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Reliable, affordable, and personalized IT support for home users and small businesses. 
+                    From desktop repairs to network setup, we dive deep to solve your tech challenges.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-home"></i>
+                        <span>Home User Focused</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-laptop"></i>
+                        <span>Remote Support Available</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Quick Response</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="scrollToSection('booking')">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Consultation
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-phone"></i>
+                        Get Remote Support
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="well-container">
+                    <div class="well-circle">
+                        <div class="tech-icons">
+                            <i class="fas fa-desktop"></i>
+                            <i class="fas fa-laptop"></i>
+                            <i class="fas fa-network-wired"></i>
+                            <i class="fas fa-video"></i>
+                            <i class="fas fa-cog"></i>
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Deep Well of Services</h2>
+                <p>Comprehensive IT solutions tailored for home users and small businesses</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="desktop">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Desktop & Laptop Support</h3>
+                    <p>Hardware repairs, software installation, performance optimization, and troubleshooting for all your computing needs.</p>
+                    <ul>
+                        <li>Hardware diagnostics & repair</li>
+                        <li>Software installation & updates</li>
+                        <li>Performance optimization</li>
+                        <li>Data recovery services</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="networking">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking Solutions</h3>
+                    <p>Home and small office network setup, Wi-Fi optimization, and connectivity troubleshooting.</p>
+                    <ul>
+                        <li>Wi-Fi setup & optimization</li>
+                        <li>Network security configuration</li>
+                        <li>Router & modem setup</li>
+                        <li>Internet connectivity issues</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="cctv">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>CCTV Systems</h3>
+                    <p>Security camera installation, configuration, and maintenance for home and small business protection.</p>
+                    <ul>
+                        <li>Camera installation & setup</li>
+                        <li>Remote viewing configuration</li>
+                        <li>System maintenance</li>
+                        <li>Storage solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="software">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Software Troubleshooting</h3>
+                    <p>Application issues, system errors, malware removal, and software optimization services.</p>
+                    <ul>
+                        <li>Application troubleshooting</li>
+                        <li>System error resolution</li>
+                        <li>Malware & virus removal</li>
+                        <li>Software optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="procurement">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Hardware Procurement</h3>
+                    <p>Expert advice and sourcing for computers, peripherals, and technology equipment.</p>
+                    <ul>
+                        <li>Hardware recommendations</li>
+                        <li>Competitive pricing</li>
+                        <li>Quality assurance</li>
+                        <li>Setup & configuration</li>
+                    </ul>
+                </div>
+                <div class="service-card featured" data-service="remote">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3>Remote Support</h3>
+                    <p>Instant help from anywhere. Secure remote access to diagnose and fix issues without leaving your home.</p>
+                    <ul>
+                        <li>Instant remote assistance</li>
+                        <li>Secure connection protocols</li>
+                        <li>Real-time problem solving</li>
+                        <li>No travel time required</li>
+                    </ul>
+                    <div class="featured-badge">Most Popular</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose Well-Tech Solutions?</h2>
+                    <p class="about-intro">
+                        Like a well that provides reliable water from deep underground, our IT solutions draw from 
+                        years of experience to provide dependable, comprehensive support for all your technology needs.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Reliable & Trustworthy</h3>
+                                <p>Count on us for consistent, dependable service that keeps your technology running smoothly.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Affordable Solutions</h3>
+                                <p>Quality IT support that doesn't break the bank, with transparent pricing and no hidden fees.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Personalized Service</h3>
+                                <p>We take time to understand your specific needs and provide tailored solutions that work for you.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Deep Expertise</h3>
+                                <p>Years of experience across all technology domains, from hardware to software to networking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="depth-visualization">
+                        <div class="depth-layer" data-depth="1">Surface Issues</div>
+                        <div class="depth-layer" data-depth="2">Common Problems</div>
+                        <div class="depth-layer" data-depth="3">Complex Challenges</div>
+                        <div class="depth-layer" data-depth="4">Deep System Issues</div>
+                        <div class="depth-layer" data-depth="5">Root Cause Solutions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>No hidden fees, no surprises - just honest, affordable IT support</p>
+            </div>
+            <div class="pricing-content">
+                <div class="pricing-card main-pricing">
+                    <div class="pricing-header">
+                        <h3>On-Site Support</h3>
+                        <div class="price">
+                            <span class="currency">R</span>
+                            <span class="amount">220</span>
+                            <span class="period">/hour</span>
+                        </div>
+                        <p class="price-note">or part thereof</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Professional on-site service</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>All tools and equipment included</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Same-day service available, upon adequate arrangement</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-card remote-pricing">
+                    <div class="pricing-header">
+                        <h3>Remote Support</h3>
+                        <div class="price">
+                            <span class="currency">R</span>
+                            <span class="amount">90</span>
+                            <span class="period">/hour</span>
+                        </div>
+                        <p class="price-note">minimum 15 minutes</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Instant remote assistance</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Secure connection protocols</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>No travel time delays</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Available for consultations as arranged within outlined business hours</span>
+                        </div>
+                    </div>
+                    <div class="popular-badge">Most Popular</div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> All prices include VAT. Hardware and software costs are additional and quoted separately.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="service-areas" class="service-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Service Areas</h2>
+                <p>Serving home users and small businesses across the region</p>
+            </div>
+            <div class="areas-content">
+                <div class="areas-text">
+                    <h3>We Come to You</h3>
+                    <p>Our on-site services cover a wide area, bringing professional IT support directly to your home or small business. For areas outside our standard service zone, remote support is always available.</p>
+                    <div class="area-features">
+                        <div class="area-feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Primary service areas within 50km</span>
+                        </div>
+                        <div class="area-feature">
+                            <i class="fas fa-laptop-house"></i>
+                            <span>Remote support available nationwide</span>
+                        </div>
+                        <div class="area-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Same-day service in most areas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="areas-visual">
+                    <div class="coverage-map">
+                        <div class="coverage-circle primary">
+                            <span>Primary Coverage</span>
+                        </div>
+                        <div class="coverage-circle secondary">
+                            <span>Extended Coverage</span>
+                        </div>
+                        <div class="coverage-circle remote">
+                            <span>Remote Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Ready to solve your tech challenges? Contact us today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <p>+27 (0) 123 456 789</p>
+                                <span>Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p>support@welltech-solutions.co.za</p>
+                                <span>We respond within 2 hours</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-laptop-house"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Remote Support</h4>
+                                <p>Instant assistance available</p>
+                                <span>Secure remote connection</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emergency-contact">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Emergency Support</h4>
+                        <p>For urgent issues outside business hours, call <strong>+27 (0) 987 654 321</strong></p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="desktop">Desktop/Laptop Support</option>
+                                <option value="networking">Networking Solutions</option>
+                                <option value="cctv">CCTV Systems</option>
+                                <option value="software">Software Troubleshooting</option>
+                                <option value="procurement">Hardware Procurement</option>
+                                <option value="remote">Remote Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency">
+                                <option value="low">Low - Within a week</option>
+                                <option value="medium">Medium - Within 2-3 days</option>
+                                <option value="high">High - Within 24 hours</option>
+                                <option value="urgent">Urgent - Same day</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Describe Your Issue *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Please describe your technical issue or requirements in detail..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="remote-ok" name="remote-ok">
+                                <span class="checkmark"></span>
+                                I'm open to remote support for this issue
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Consultation</h2>
+                <p>Schedule a convenient time for your IT support needs</p>
+            </div>
+            <div class="booking-content">
+                <div class="booking-options">
+                    <div class="booking-option" data-type="onsite">
+                        <div class="option-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>On-Site Visit</h3>
+                        <p>We come to your location</p>
+                        <div class="option-price">R220/hour</div>
+                        <button class="btn-secondary select-option">Select</button>
+                    </div>
+                    <div class="booking-option" data-type="remote">
+                        <div class="option-icon">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                        <h3>Remote Support</h3>
+                        <p>Instant help via secure connection</p>
+                        <div class="option-price">R90/hour</div>
+                        <button class="btn-secondary select-option">Select</button>
+                    </div>
+                </div>
+                <div class="booking-form-container" id="bookingFormContainer" style="display: none;">
+                    <form class="booking-form" id="bookingForm">
+                        <h3 id="bookingTitle">Book On-Site Visit</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name">Full Name *</label>
+                                <input type="text" id="booking-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email *</label>
+                                <input type="email" id="booking-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number *</label>
+                                <input type="tel" id="booking-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-date">Preferred Date *</label>
+                                <input type="date" id="booking-date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-time">Preferred Time *</label>
+                                <select id="booking-time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="08:00">08:00 AM</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-duration">Expected Duration</label>
+                                <select id="booking-duration" name="duration">
+                                    <option value="1">1 hour</option>
+                                    <option value="2">2 hours</option>
+                                    <option value="3">3 hours</option>
+                                    <option value="4">4+ hours</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" id="addressGroup">
+                            <label for="booking-address">Address *</label>
+                            <textarea id="booking-address" name="address" rows="2" placeholder="Please provide your full address for on-site visits"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-issue">Issue Description *</label>
+                            <textarea id="booking-issue" name="issue" rows="3" required placeholder="Please describe the technical issue or service you need..."></textarea>
+                        </div>
+                        <div class="booking-summary" id="bookingSummary">
+                            <h4>Booking Summary</h4>
+                            <div class="summary-item">
+                                <span>Service Type:</span>
+                                <span id="summaryType">On-Site Visit</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Rate:</span>
+                                <span id="summaryRate">R220/hour</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Estimated Cost:</span>
+                                <span id="summaryEstimate">R220 - R880</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-water"></i>
+                        <span>Well-Tech Solutions</span>
+                    </div>
+                    <p>Tech solutions as deep as a well. Reliable, affordable, and personalized IT support for home users and small businesses.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Desktop & Laptop Support</a></li>
+                        <li><a href="#services">Networking Solutions</a></li>
+                        <li><a href="#services">CCTV Systems</a></li>
+                        <li><a href="#services">Software Troubleshooting</a></li>
+                        <li><a href="#services">Hardware Procurement</a></li>
+                        <li><a href="#services">Remote Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#service-areas">Service Areas</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 (0) 123 456 789</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@welltech-solutions.co.za</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-2PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Well-Tech Solutions. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
